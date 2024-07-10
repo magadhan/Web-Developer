@@ -188,8 +188,6 @@
         background-image: url("./Images/bg-skills2.jpg");
     }
     .skillList{
-        display: flex;
-        align-items: center; 
         padding-left: 0;
     }
     .skillList img{
@@ -199,8 +197,11 @@
     .skillList li{
         list-style: none;
         text-align: center;
-        width: 50%;
-
+        width: 400px;
+        padding-right: 5px;
+        padding-left: 5px;
+        display: inline-block;
+        padding-top: 20px;
     }
 
     .project{
@@ -212,7 +213,7 @@
         overflow:hidden;
         padding-left:0;
         padding-right: 0;
-
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     }
     .projectList h6{
         font-size: 20px;
@@ -224,7 +225,8 @@
     .projectList li{
         list-style: none;
         border: 1px solid grey;
-        box-shadow: 2px 2px 4px black;
+        box-shadow: 10px 10px;
+        /* box-shadow: 2px 2px 4px black; */
         width: 45%;
         height: 45%;
         border-radius: 10px;
@@ -235,6 +237,11 @@
         text-align: center;
         background-color: hwb(177 86% 0%);
         
+    }
+    .projectList li:hover{
+        box-shadow: 2px 2px 4px black;
+        background-color: hwb(174 77% 3%);
+
     }
     .projectList img{
        width: 100%;
