@@ -12,8 +12,6 @@
 
   <body>
 
-    <a class="home" href="#Portfolio">Home</a>
-
     <header>
       <div id="Portfolio"><h2>Portfolio</h2></div>
       <nav>
@@ -48,8 +46,30 @@
     </div>
     <hr>
 
-    <div>
+    <div class="skill">
       <div id="skills">Skills</div>
+      <ul class="skillList">
+        <li>
+          <img src="./Images/html.png" alt="Picture of the html icon.">
+          <h5>HTML</h5>
+          <p>I learned HTML from Girls Who Code and Alpha Prime Tech. I used HTML in order to create a portfolio website, and crasche revamp website among the many other websites in <u>projects</u>.</p>
+        </li>
+        <li>
+          <img src="./Images/css.png" alt="Picture of the css icon.">
+          <h5>CSS</h5>
+          <p>I learned HTML from Girls Who Code and Alpha Prime Tech. I used HTML in order to create a portfolio website, and crasche revamp website among the many other websites in <u>projects</u>.</p>
+        </li>
+        <li>
+          <img src="./Images/javascript.png" alt="Picture of the javascript icon.">
+          <h5>JavaScript</h5>
+          <p>I learned HTML from Girls Who Code and Alpha Prime Tech. I used HTML in order to create a portfolio website, and crasche revamp website among the many other websites in <u>projects</u>.</p>
+        </li>
+        <li>
+          <img src="./Images/python.png" alt="Picture of the python icon.">
+          <h5>Python</h5>
+          <p>I learned HTML from Girls Who Code and Alpha Prime Tech. I used HTML in order to create a portfolio website, and crasche revamp website among the many other websites in <u>projects</u>.</p>
+        </li>
+      </ul>
       
     </div>
 
@@ -85,8 +105,10 @@
         </li>
 
       </ul>
-      
-      <a id="resume" href="resume.pdf" target="_blank">Resume<i class='bx bx-link-external' ></i></a>
+      <div class="button-git">
+        <button type="button" id="github-button">Find More on <b>Github</b>.</button>
+      </div>
+      <a id="resume" href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:899b1580-ee5f-4ae0-9432-412c52033941" target="_blank">Resume<i class='bx bx-link-external' ></i></a>
     </div>
     <hr>
     
@@ -112,5 +134,11 @@
     <div class="privacy">
       <p>Copyright &copy; 2024. All rights reserved</p>
     </div>
+
+    <script>
+      document.getElementById("github-button").onclick = function () {
+        location.href = "https://github.com/magadhan?tab=repositories";
+      };
+    </script>
   </body>
 </html>
