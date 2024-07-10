@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var grade = Math.floor(Math.random()*200);
+        let greeting;
+        if (grade > 100){
+            greeting = "Very Good Work";
+        }
+        else if (grade < 100){
+            greeting = "Ok";
+        }
+        else{
+            greeting ="Try Again";
+        }
+        document.getElementById("demo").innerHTML= greeting;
+        console.log(greeting);
+        alert(greeting);
+    </script>
+</body>
+</html>
