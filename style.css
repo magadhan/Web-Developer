@@ -213,7 +213,6 @@
         overflow:hidden;
         padding-left:0;
         padding-right: 0;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     }
     .projectList h6{
         font-size: 20px;
@@ -236,24 +235,20 @@
         margin-top: 20px;
         text-align: center;
         background-color: hwb(177 86% 0%);
-        
+        transform: scale(.9);
+        transition: .4s;
     }
     .projectList li:hover{
         box-shadow: 2px 2px 4px black;
-        background-color: hwb(174 77% 3%);
-
+        background-color: hwb(174 43% 7%);
+        transform: scale(1);
     }
     .projectList img{
        width: 100%;
        height: 100%;
        
     }
-    .projectList li:hover{
 
-    }
-
-
-    
     .button-git{
         width: 100%;
         display: flex;
@@ -268,6 +263,15 @@
         background-color: black;
         color: white;
         border: 3px solid rgb(177, 173, 173);
+        transform: scale(1.0);
+        transition: .5s;
+    }
+    #resume, .button{
+        transform: scale(1.0);
+        transition: .5s;
+    }
+    #github-button:hover, #resume:hover, .button:hover{
+        transform: scale(.9);
     }
     #resume{
         justify-content: center;
